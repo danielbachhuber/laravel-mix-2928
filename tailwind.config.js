@@ -1,7 +1,14 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [],
+  purge: {
+    content: [
+      './assets/js/**/*.vue',
+    ],
+    options: {
+      safelist: ['min-h-screen', 'border-transparent'],
+    }
+  },
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
