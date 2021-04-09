@@ -1,7 +1,7 @@
 import Vue from 'vue';
 
 // Individual components
-Vue.component('on-off-switch', require('./components/OnOffSwitch.vue').default);
+Vue.component('component-container', require('./components/Container.vue').default);
 
 if (document.querySelector('.vueify')) {
 	new Vue({
